@@ -12,6 +12,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: JosephJvB/metrics@main
+      - uses: JosephJvB/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}

@@ -1,17 +1,43 @@
 name: Metrics
 on:
-  # Schedule daily updates
+  # Schedule updates (each day)
   schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  # Run workflow manually
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+  # Run workflow when pushing on main
+  push: {branches: ["master","main"]}
 jobs:
-  github-metrics:
+  metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: JosephJvB/metrics@master
+      - name: Metrics - Left
+        uses: JosephJvB/metrics@master
         with:
+          filename: metrics.left.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          config_order: base.header, base.activity+community, base.repositories
+          base: header, activity, community, repositories, metadata
+          base_indepth: yes
+          repositories: 1000
+
+      - name: Metrics - Right
+        uses: JosephJvB/metrics@master
+        with:
+          filename: metrics.right.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_order: isocalendar, languages
+          base: ""
+          debug: yes
+          repositories: 1000
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          # plugin_languages_analysis_timeout: 30
+          plugin_languages_ignored: html, css #, vim script
+          # plugin_languages_indepth: yes
+          # plugin_languages_recent_load: 1000
+          # plugin_languages_recent_days: 28
+          # plugin_languages_sections: most-used, recently-used
+          # plugin_languages_skipped:
+          plugin_languages_threshold: 1%

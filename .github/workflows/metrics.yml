@@ -17,8 +17,10 @@ jobs:
         with:
           filename: metrics.left.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          config_order: base.header, base.activity+community, base.repositories
-          base: header, activity, community, repositories, metadata
+          config_order: base.header, base.activity, base.repositories
+          base: header, activity, repositories, metadata
+          # config_order: base.header, base.activity+community, base.repositories
+          # base: header, activity, community, repositories, metadata
           base_indepth: yes
           repositories: 1000
 

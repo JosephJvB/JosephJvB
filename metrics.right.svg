@@ -51,7 +51,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
                             </svg>
-                            Average per day at ~2.62
+                            Average per day at ~2.64
                         </div>
                     </section>
                 </div>
@@ -1044,6 +1044,16 @@
                                 <path fill="#40c463" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.9473684210526314 0,1.9473684210526314 z"/>
                                 <path fill="#40c463" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.9473684210526314 1.7,2.9473684210526314 z"/>
                             </g>
+                            <g transform="translate(-3.4, 8)">
+                                <path fill="#ebedf0" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#ebedf0" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z"/>
+                                <path fill="#ebedf0" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z"/>
+                            </g>
+                            <g transform="translate(-5.1, 6.157894736842106)">
+                                <path fill="#216e39" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#216e39" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.842105263157895 0,3.8421052631578947 z"/>
+                                <path fill="#216e39" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.8421052631578947 1.7,4.842105263157895 z"/>
+                            </g>
                         </g>
                     </g>
                 </svg>
@@ -1063,12 +1073,12 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="247.0882014966163" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="247.0882014966163" y="0" width="121.23246123965475" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="368.32066273627106" y="0" width="45.13714064024583" height="8" fill="#00ADD8"/>
-                    <rect mask="url(#languages-bar)" x="413.4578033765169" y="0" width="30.147614249026574" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="443.60541762554345" y="0" width="9.223649513147807" height="8" fill="#ff5a03"/>
-                    <rect mask="url(#languages-bar)" x="452.8290671386913" y="0" width="7.170932861308761" height="8" fill="#178600"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="251.81179466389798" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="251.81179466389798" y="0" width="114.74124335274277" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="366.55303801664076" y="0" width="46.015016676493566" height="8" fill="#00ADD8"/>
+                    <rect mask="url(#languages-bar)" x="412.56805469313434" y="0" width="30.723947169068882" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="443.2920018622032" y="0" width="9.399978320245069" height="8" fill="#ff5a03"/>
+                    <rect mask="url(#languages-bar)" x="452.6919801824483" y="0" width="7.308019817551704" height="8" fill="#178600"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
